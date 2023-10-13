@@ -1,0 +1,98 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.header{
+    background: #024fbc;
+
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+    border-radius: 0px 0px 10px 10px ;
+}
+.menuList{
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 800px;
+    }
+
+    .online{
+        color: white;
+        cursor: pointer;
+        position: relative;
+    
+    }
+
+.menuList2{
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 580px;
+}
+li:hover{
+    opacity: 50%;
+    transition: 0.2s all ease-in-out;
+}
+a{
+    color: white;
+}
+.programs{
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.menuList.show{
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+    background: #024fbc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.menuList2.show{
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+    background: #024fbc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+
+}
